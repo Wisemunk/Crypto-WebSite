@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: Outfit, sans-serif;
+    background: black;
+    margin: 0;
+}
+
+nav {
+    height: 7vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.2);
+    border-bottom: 1px solid white;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 2vh;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#khibra {
+    background: hsl(0, 0%, 100%);
+    color: hsl(217, 54%, 11%);
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+main {
+    color: white;
+    display: flex;
+
+    width: 100%;
+    height: 65%;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content img {
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    padding: 5% 15% 5% 15%;
+
+}
+
+@media  (max-width: 950px) {
+    .content {
+        padding: 2%;
+    }
+}
+
+.content h1 {
+    font-size: 70px;
+}
+
+.content p {
+    font-size: 40px;
+}
+
+@media  (max-width: 675px) {
+    .content {
+        padding: 2%;
+    }
+
+    .content h1 {
+        font-size: 50px;
+    }
+
+    .content p {
+        font-size: 35px;
+    }
+}
+.content button {
+    position: relative;
+    margin-top: 5%;
+    background: black;
+    border: none;
+    height: 10%;
+    width: 200px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+}
+
+.content button:hover {
+    cursor: pointer;
+}
