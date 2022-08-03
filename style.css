@@ -110,3 +110,69 @@ main {
 .content button:hover {
     cursor: pointer;
 }
+
+.buy , .stats {
+    padding: 20px;
+}
+
+.buy h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.buy p {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.buy img {
+    background: rgba(128, 128, 128, 0.4);
+    padding: 30px;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    width: 200px;
+    height: 50px;
+}
+
+.stats h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.stats div {
+    display: flex;
+    margin-top: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.stats div a {
+    background: rgba(128, 128, 128, 0.4);
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: 1px solid white;
+    height: 50px;
+    width: 100%;
+}
+
+#fix {
+    margin-right: 20px;
+}
+
+
+#addr {
+    margin-top: 20px;
+    background: rgba(128, 128, 128, 0.4);
+    font-family: Outfit, sans-serif;
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+#addr:hover {
+    cursor: pointer;
+}
