@@ -13,7 +13,6 @@ nav {
     display: flex;
     justify-content: right;
     align-items: center;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.2);
     border-bottom: 1px solid white;
 }
 
@@ -60,8 +59,14 @@ main {
 
 .content {
     position: relative;
-    padding: 5% 15% 5% 15%;
+    padding: 2%;
+}
 
+@media  (min-width: 1450px) {
+    .content h1, .content h2 , .content p , .content button{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 }
 
 @media  (max-width: 950px) {
@@ -77,7 +82,7 @@ main {
     font-size: 70px;
 }
 
-.content p {
+.content h2 {
     font-size: 40px;
 }
 
@@ -116,6 +121,13 @@ main {
     padding: 20px;
 }
 
+@media  (min-width: 1450px) {
+    .buy, .stats {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
 .buy h1 {
     font-size: 60px;
     margin-bottom: 0;
@@ -127,7 +139,7 @@ main {
 }
 
 .buy img {
-    background: rgba(128, 128, 128, 0.4);
+    background: rgba(128, 128, 128, 0.2);
     padding: 30px;
     margin-right: 20px;
     border-radius: 20px;
@@ -144,36 +156,24 @@ main {
 .stats div {
     display: flex;
     margin-top: 20px;
-    list-style: none;
     text-align: center;
 }
 
-.stats div a {
-    background: rgba(128, 128, 128, 0.4);
+@media (max-width: 1100px) {
+    .stats div {
+        flex-direction: column;
+        width: 90%;
+    }
+}
+
+.stats div p {
+    background: rgba(128, 128, 128, 0.2);
     padding: 20px 30px;
-    border-radius: 20px;
-    border: 1px solid white;
+    border-radius: 10px;
     height: 50px;
     width: 100%;
 }
 
-#fix {
+.fix {
     margin-right: 20px;
-}
-
-
-#addr {
-    margin-top: 20px;
-    background: rgba(128, 128, 128, 0.4);
-    font-family: Outfit, sans-serif;
-    font-size: 18px;
-    color: white;
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 20px;
-    width: 100%;
-}
-
-#addr:hover {
-    cursor: pointer;
 }
