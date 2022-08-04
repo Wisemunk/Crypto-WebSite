@@ -14,6 +14,7 @@ nav {
     justify-content: right;
     align-items: center;
     border-bottom: 1px solid white;
+    top: 0;
 }
 
 nav ul li {
@@ -29,9 +30,17 @@ nav ul li a {
 
 #khibra {
     background: hsl(0, 0%, 100%);
-    color: hsl(217, 54%, 11%);
+    color: black;
+    font-weight: 700;
     padding: 10px 10px;
     border-radius: 10px;
+    transition: background-color .5s, color .5s;
+}
+
+#khibra:hover{
+    border: 1px solid white;
+    background: black;
+    color: white;
 }
 
 main {
@@ -86,6 +95,10 @@ main {
     font-size: 40px;
 }
 
+.content p {
+    font-size: 18px;
+}
+
 @media  (max-width: 675px) {
     .content {
         padding: 2%;
@@ -101,28 +114,31 @@ main {
     }
 }
 .content button {
+    font-size: 15px;
     position: relative;
-    margin-top: 5%;
-    background: black;
-    border: none;
-    height: 50px;
-    width: 200px;
+    background: rgba(0, 0, 0, 0.4);
+    height: 60px;
+    width: 250px;
     font-weight: 600;
     color: white;
     border-radius: 10px;
     text-align: center;
+    transition: background-color .5s;
+    cursor: pointer;
+    border: 1px solid white;
 }
 
 .content button:hover {
-    cursor: pointer;
+    background: white;
+    color: black;
 }
 
-.buy , .stats {
+.buy , .stats, .contract, .audit {
     padding: 20px;
 }
 
 @media  (min-width: 1450px) {
-    .buy, .stats {
+    .buy, .stats, .audit, .contract {
         margin-left: 20%;
         margin-right: 20%;
     }
@@ -146,6 +162,13 @@ main {
     border: 1px solid white;
     width: 200px;
     height: 50px;
+    transition: width .5s, height .5s, background-color .5s;
+}
+
+.buy img:hover {
+    width: 220px;
+    height: 60px;
+    background: black;
 }
 
 .stats h1 {
@@ -176,4 +199,47 @@ main {
 
 .fix {
     margin-right: 20px;
+}
+
+.audit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audit div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 100px;
+    border: 2px dashed white;
+    border-radius: 10px;
+    background: transparent;
+    gap: 60px;
+    font-size: 25px;
+}
+
+.audit button {
+    width: 150px;
+    height: 60px;
+    background: rgba(128, 128, 128, 0.2);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid ;
+    font-size: 18px;
+    font-family: Outfit, sans-serif;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.audit button:hover {
+    background: white;
+    color: black;
+    font-weight: 700;
+}
+
+.contract h1{
+    font-size: 60px;
+    margin-bottom: 0;
 }
