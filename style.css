@@ -136,7 +136,7 @@ main {
 
 .coin {
     position: absolute;
-    transform: translate(-40%, 230%);
+    transform: translate(-40%, 260%);
 }
 
 .coin img {
