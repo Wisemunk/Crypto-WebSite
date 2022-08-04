@@ -176,7 +176,6 @@ main {
 }
 
 .buy img:hover {
-    width: 220px;
     height: 60px;
     background: black;
 }
