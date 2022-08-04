@@ -2,14 +2,14 @@
 
 body {
     font-family: Outfit, sans-serif;
-    background: black;
+    background: black url("images/blue-radiant.svg") no-repeat;
+    background-size: cover;
     margin: 0;
 }
 
 nav {
     height: 7vh;
     width: 100%;
-    position: fixed;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -88,7 +88,7 @@ main {
 }
 
 .content h1 {
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .content h2 {
@@ -113,6 +113,7 @@ main {
         font-size: 35px;
     }
 }
+
 .content button {
     font-size: 15px;
     position: relative;
@@ -133,19 +134,28 @@ main {
     color: black;
 }
 
-.buy , .stats, .contract, .audit {
+.coin img {
+    position: absolute;
+    opacity: 0.4;
+    height: 300px;
+    width: 300px;
+    transform: translate(-30%, 100%) rotate(30deg);
+}
+
+.buy , .stats, .contract, .audit, .community {
     padding: 20px;
 }
 
 @media  (min-width: 1450px) {
-    .buy, .stats, .audit, .contract {
+    .buy, .stats, .audit, .contract, .community {
         margin-left: 20%;
         margin-right: 20%;
     }
 }
 
-.buy h1 {
-    font-size: 60px;
+.buy h1, .contract h1, .stats h1 {
+    margin-top: 50px;
+    font-size: 50px;
     margin-bottom: 0;
 }
 
@@ -169,11 +179,6 @@ main {
     width: 220px;
     height: 60px;
     background: black;
-}
-
-.stats h1 {
-    font-size: 60px;
-    margin-bottom: 0;
 }
 
 .stats div {
@@ -239,7 +244,129 @@ main {
     font-weight: 700;
 }
 
-.contract h1{
-    font-size: 60px;
-    margin-bottom: 0;
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 875px) {
+    .lol {
+        flex-direction: column;
+    }
+
+    #first_half div, #second_half div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#first_half div, #second_half div {
+    background: rgba(128, 128, 128, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px  solid white;
+}
+
+#fleche {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#secure, #clover {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#first_half img, #second_half img {
+    width: 350px;
+}
+
+#fleche img {
+    width: 200px;
+}
+
+#first_half em, #second_half em {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.2);
+    width: 50%;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.explore em {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.explore button {
+    background: transparent;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color .3s, background-color .3s;
+}
+
+.explore button:hover {
+    background: white;
+    color: black;
+}
+
+.community {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.community p {
+    font-size: 18px;
+}
+
+.community em {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.community button {
+    background: rgba(128, 128, 128, 0.2);
+    color: white;
+    height: 50px;
+    width: 20%;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color .3s, background-color .3s;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.community button:hover {
+    background: white;
+    color: black;
 }
