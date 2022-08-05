@@ -457,3 +457,50 @@ main {
     position: absolute;
     transform: translate(-40%, 150%);
 }
+
+#socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+#socials li {
+    background: rgba(128, 128, 128, 0.2);
+    padding: 20px;
+    width: 130px;
+    height: 70px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: color .3s, background-color .3s;
+}
+
+#socials a {
+    font-weight: 400;
+}
+
+#socials li:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+#socials li:hover .fa-youtube {
+    color: brown;
+}
+
+#socials li:hover .fa-twitter {
+    color: deepskyblue;
+}
+
+#socials li:hover .fa-telegram {
+    color: dodgerblue;
+}
+
+#socials li:hover .fa-discord {
+    color: darkslateblue;
+}
