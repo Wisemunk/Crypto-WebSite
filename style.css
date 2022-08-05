@@ -448,7 +448,8 @@ main {
     text-decoration: none;
 }
 
-.fa-linkedin, .fa-github {
+.fa-linkedin, .fa-github , .fa-discord, .fa-telegram, .fa-twitter, .fa-youtube {
+    display: inline-block;
     background: rgba(255, 255, 255, 0);
     color: white;
 }
